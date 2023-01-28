@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/PeeroDemba/Interactive-Rating-Component.git
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -49,10 +49,3 @@ I will keep building more dynamic projects with JavaScript so as to be fully abl
 
 - Frontend Mentor - [@PeeroDemba](https://www.frontendmentor.io/profile/PeeroDemba)
 - Twitter - [@Peter_J_Hart](https://twitter.com/Peter_J_Hart)
-
-
-
-Questions:
-I successfully completed the project but i have a few questions:
-- Should i have used the FORM element to implement the rating buttons.
--  If yes, how can i extract an integer number from the form using JavaScript so as to display the result on the Thank You page. I feel this will help me verify that the user/client has made a selection as the current method does not offer that.
