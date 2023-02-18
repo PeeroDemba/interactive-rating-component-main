@@ -5,86 +5,204 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(216deg, 12%, 8%);
   display: flex;
   flex-direction: column;
   font-family: "Overpass", sans-serif;
 }
 
-.show > .board {
-  background-color: hsl(213deg, 19%, 18%);
-  border: none;
-  padding: 0.25rem;
-  margin: 0 3rem;
-  border-radius: 1rem;
-  color: hsl(25deg, 97%, 53%);
-}
-
 main.container {
-  width: 20rem;
+  width: 25rem;
   height: 23rem;
   background-color: hsl(215deg, 17%, 14%);
   color: white;
   margin: auto;
   border-radius: 1rem;
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
-main.container .show {
-  display: block;
+
+#thanks {
+  text-align: center;
+  padding: 0 0.8rem;
 }
-main.container .show img {
+#thanks img {
+  padding: 0.75rem;
+  margin-bottom: 1.3rem;
+}
+#thanks h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+#thanks > p {
+  margin-bottom: 1.3rem;
+  line-height: 1.2rem;
+  font-size: 1rem;
+  color: hsl(217deg, 12%, 63%);
+}
+#thanks > p.score {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 1rem;
+  padding: 0.3rem 0;
+  width: 12rem;
+  margin: 0 auto;
+}
+
+#rating {
+  padding: 0 1rem;
+}
+#rating fieldset {
+  border: none;
+  text-align: center;
+}
+#rating img {
   padding: 0.75rem;
   border-radius: 50%;
   margin-bottom: 1.3rem;
   background-color: hsl(213deg, 19%, 18%);
 }
-main.container .show h2 {
+#rating h2 {
   margin-bottom: 1.3rem;
 }
-main.container .show p {
+#rating p {
   margin-bottom: 1.3rem;
   line-height: 1.2rem;
   font-size: 1rem;
 }
-main.container .show ul {
-  margin-bottom: 1.3rem;
-  display: flex;
-  justify-content: space-between;
+#rating .fcolor {
+  color: hsl(217deg, 12%, 63%);
 }
-main.container .show ul li {
-  display: inline-block;
+#rating input[type=radio] {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.9rem;
+}
+#rating input[type=button] {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+  margin-top: 1rem;
+  border: none;
+}
+#rating input[type=button]:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+}
+#rating #rating_1::before {
+  content: "1";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
   border-radius: 50%;
-}
-main.container .show ul li button {
-  padding: 0.75rem 1.1rem;
   background-color: hsl(213deg, 19%, 18%);
+  text-align: center;
+  color: hsl(217deg, 12%, 63%);
 }
-main.container .show ul li button:hover {
+#rating #rating_1:hover::before {
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-main.container .show ul li button:focus {
+#rating #rating_1:checked::before {
   background-color: hsl(217deg, 12%, 63%);
   color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-main.container .show button {
-  border: none;
-  color: hsl(0deg, 0%, 100%);
-  width: 100%;
-  height: 2.5rem;
-  border-radius: 1.6rem;
-  background-color: hsl(25deg, 97%, 53%);
+#rating input#rating_2::before {
+  content: "2";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
 }
-main.container .show button:hover {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(25deg, 97%, 53%);
+#rating #rating_2:hover::before {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
   cursor: pointer;
 }
-main.container .hide {
+#rating #rating_2:checked::before {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_3::before {
+  content: "3";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+}
+#rating #rating_3:hover::before {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_3:checked::before {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_4::before {
+  content: "4";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+}
+#rating #rating_4:hover::before {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_4:checked::before {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating input#rating_5::before {
+  content: "5";
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+}
+#rating #rating_5:hover::before {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating #rating_5:checked::before {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+#rating label {
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
   display: none;
 }
 
